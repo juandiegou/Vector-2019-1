@@ -1,0 +1,28 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "revista": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "revista",
+    "password": "",
+    "name": "revista",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  },
+  "users": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "users",
+    "password": "",
+    "name": "users",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}

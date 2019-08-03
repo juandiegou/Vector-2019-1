@@ -1,0 +1,25 @@
+{
+  "name": "magazine",
+  "plural": "Magazines",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "articles": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "edition": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

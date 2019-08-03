@@ -1,0 +1,52 @@
+{
+  "name": "Usuario",
+  "plural": "Usuarios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "secondFirstName": {
+      "type": "string"
+    },
+    "firstLastName": {
+      "type": "string",
+      "required": true
+    },
+    "secondLastName": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "cellphone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "actionField": {
+      "type": "string"
+    },
+    "speciality": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

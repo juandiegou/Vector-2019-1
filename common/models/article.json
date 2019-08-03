@@ -1,0 +1,49 @@
+{
+  "name": "Article",
+  "plural": "Articles",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "abstract": {
+      "type": "string",
+      "required": true
+    },
+    "keywords": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "authors": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "file": {
+      "type": "string",
+      "required": true
+    },
+    "score": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "state": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
