@@ -6,9 +6,9 @@ body, html {
 
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ecoinventos.com/wp-content/uploads/2018/03/Pasillo-libre-de-plasticos.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://avante.biz/wp-content/uploads/Science-Wallpaper/Science-Wallpaper-028.jpg");
     /* Set a specific height */
-    height: 350px;
+    height: 500px;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
