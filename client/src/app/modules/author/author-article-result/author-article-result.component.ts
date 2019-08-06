@@ -9,6 +9,8 @@ export class AuthorArticleResultComponent implements OnInit {
 
   constructor() { }
 
+  
+
   ngOnInit() {
   }
 
