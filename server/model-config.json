@@ -36,19 +36,19 @@
     "public": false
   },
   "Usuario": {
-    "dataSource": "users",
+    "dataSource": "db",
     "public": true
   },
   "Article": {
-    "dataSource": "revista",
+    "dataSource": "db",
     "public": true
   },
   "magazine": {
-    "dataSource": "revista",
+    "dataSource": "db",
     "public": true
   },
   "Collection": {
-    "dataSource": "revista",
+    "dataSource": "db",
     "public": true
   }
 }
