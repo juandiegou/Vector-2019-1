@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TemplatesModule } from './templates/templates.module';
 import { UserModule } from './modules/user/user.module';
+import { EvaluadorModule } from './modules/evaluador/evaluador.module';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { UserModule } from './modules/user/user.module';
     BrowserModule,
     AppRoutingModule,
     TemplatesModule,
-    UserModule
+    UserModule,
+    EvaluadorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,6 +4,7 @@ import { TemplatesRoutingModule } from './templates/templates-routing.module';
 import { UserRoutingModule } from './modules/user/user-routing.module';
 import { AuthorRoutingModule } from './modules/author/author-routing.module';
 import { EditorModule } from './modules/editor/editor.module';
+import { EvaluadorRoutingModule } from './modules/evaluador/evaluador-routing.module';
 
 
 const routes: Routes = [];
@@ -14,7 +15,9 @@ const routes: Routes = [];
     UserRoutingModule,
     AuthorRoutingModule,
     EditorModule,
+    EvaluadorRoutingModule,
     TemplatesRoutingModule
+   
   ], exports: [
     RouterModule
   ]
