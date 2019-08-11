@@ -4,9 +4,9 @@
         <a routerLink="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="info">Información</a></li>
-            <li><a href="user/login">Iniciar sesión</a></li>
-            <li><a href="user/register">Registrarse</a></li>
-            <li><a href="user/logout">Desconectarse</a></li>
+            <li><a *ngIf="!userLogged" href="user/login">Iniciar sesión</a></li>
+            <li><a *ngIf="!userLogged" href="user/register">Registrarse</a></li>
+            <li><a *ngIf="userLogged" href="user/logout">Desconectarse</a></li>
         </ul>
     </div>
 </nav>
