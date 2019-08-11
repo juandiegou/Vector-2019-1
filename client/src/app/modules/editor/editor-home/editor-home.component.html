@@ -1,26 +1,162 @@
 <br>
 <div class="row">
-    <div class="col s12">
+    <div class="col s4">
+
         <div class="row">
-            <a class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Invitar
-                evaluador</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#listeva">
+                <i class="material-icons left">people</i
+                    >Listar evaluadores
+            </a>
         </div>
         <div class="row">
-            <a class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Listar
-                evaluadores</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#listedi">
+                <i class="material-icons left">people</i>
+                    Listar editores
+                </a>
         </div>
         <div class="row">
-            <a class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Crear
-                nueva edición</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#credicion">
+                <i class="material-icons left">create</i>
+                    Crear nueva edición
+            </a>
         </div>
         <div class="row">
-            <a class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Listar
-                artículos</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#listarti">
+                <i class="material-icons left">archive</i>
+                artículos Listar
+            </a>
         </div>
         <div class="row">
-            <a class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Estadísticas</a>
-        </div>
-        <div class="row">
-            <a class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Editores</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#estad">
+                <i class="material-icons left">pie_chart_outlined</i>
+                Estadísticas
+            </a>
         </div>
     </div>
+    <div class="col s8">
+
+        <h2>Hello world</h2>
+        <div class="row">
+            here you manage your editor account
+        </div>
+    </div>
+
+
+    <div id="inviteva" class="modal">
+        <div class="modal-content">
+            <select>
+                <option>
+                    elija
+                </option>
+                <option *ngFor="let eval of evaluadores">
+                    {{eval}}
+                </option>
+            </select>
+        </div>
+        <div class="modlad-footer">
+            <a  class="modal-close waves-effect waves-green btn-flat">cerrar</a>
+        </div>
+    </div>
+
+    
+    <div id="invitedi" class="modal">
+        <div class="modal-content">
+            <select>
+                <option>
+                    elija un editor
+                </option>
+                <option *ngFor="let editor of editores">
+                    {{editor}}
+                </option>
+            </select>
+        </div>
+        <div class="modlad-footer">
+            <a  class="modal-close waves-effect waves-green btn-flat">cerrar</a>
+        </div>
+    </div>
+
+    <div id="listeva" class="modal">
+            <div class="modal-content">
+                    <div class="row">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Apellido</th>
+                                    <th></th>
+                                </tr>
+
+                            </thead>
+                            <tbody *ngFor="let eval of evaluadores">
+                                <a class="waves-effect waves-light btn modal-trigger" href="#inviteva">
+                                    <i class="material-icons left">assignment_ind</i>
+                                         Invitar evaluador
+                                    </a>
+                            </tbody>
+                        </table>
+                    </div>
+
+            </div>
+            <div class="modlad-footer">
+                <a  class="modal-close waves-effect waves-green btn-flat">cerrar</a>
+            </div>
+   </div>
+
+   <div id="listedi" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <table>
+                    <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Apellido</th>
+                          <th></th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let editor of editores">
+                        
+                        <a class="waves-effect waves-light btn modal-trigger" href="#invitedi">
+                            <i class="material-icons left">assignment_ind</i>
+                            Invitar editor
+                        </a>
+                    </tbody>
+            </table>
+                
+            </div>
+        </div>
+        <div class="modlad-footer">
+            <a  class="modal-close waves-effect waves-green btn-flat">cerrar</a>
+        </div>
+    </div>
+
+    <div id="credicion" class="modal">
+            <div class="modal-content">
+
+            </div>
+            <div class="modlad-footer">
+                <a  class="modal-close waves-effect waves-green btn-flat">cerrar</a>
+            </div>
+    </div>
+
+    <div id="listarti" class="modal">
+            <div class="modal-content">
+
+            </div>
+            <div class="modlad-footer">
+                <a  class="modal-close waves-effect waves-green btn-flat">cerrar</a>
+            </div>
+    </div>
+
+
+
+    <div id="estad" class="modal">
+            <div class="modal-content">
+
+            </div>
+            <div class="modlad-footer">
+                <a  class="modal-close waves-effect waves-green btn-flat">cerrar</a>
+            </div>
+        </div>
+
+
+</div>

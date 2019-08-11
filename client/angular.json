@@ -29,7 +29,8 @@
             ],
             "scripts": [
               "node_modules/materialize-css/dist/js/materialize.js",
-              "src/assets/js/matScripts.js"
+              "src/assets/js/matScripts.js",
+              "node_modules/materialize-css/js/modal.js"
             ]
           },
           "configurations": {
