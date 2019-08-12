@@ -21,7 +21,7 @@ export class UserService {
 
   getUserInformation() {
     let userInfo = localStorage.getItem("userInfo");
-    if(isNullOrUndefined(userInfo)) {
+    if (isNullOrUndefined(userInfo)) {
       return null
     }
     return (JSON.parse(userInfo));
@@ -43,6 +43,14 @@ export class UserService {
   logoutUser() {
     localStorage.removeItem("userInfo");
     localStorage.removeItem("userTk");
+  }
+
+  registerUser(user: UserModel): Observable<UserModel> {
+    return this.http.post<UserModel>(`${base_url}Users`, user, {
+      headers: new HttpHeaders({
+        "content-type": "application/json"
+      })
+    });
   }
 
   saveToken(token) {
