@@ -13,5 +13,6 @@ export interface UserModel {
     phone: string;
     education: string;
     especialization: string;
+    articles: Object;
     user: UserModel;
 }

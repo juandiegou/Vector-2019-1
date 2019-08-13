@@ -16,15 +16,11 @@
       "required": true
     },
     "keywords": {
-      "type": [
-        "string"
-      ],
+      "type": "string",
       "required": true
     },
     "authors": {
-      "type": [
-        "object"
-      ],
+      "type": "string",
       "required": true
     },
     "file": {
