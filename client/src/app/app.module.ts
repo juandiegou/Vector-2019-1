@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TemplatesModule } from './templates/templates.module';
 import { UserModule } from './modules/user/user.module';
 import { EvaluadorModule } from './modules/evaluador/evaluador.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { EvaluadorModule } from './modules/evaluador/evaluador.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     TemplatesModule,
     UserModule,
     EvaluadorModule
