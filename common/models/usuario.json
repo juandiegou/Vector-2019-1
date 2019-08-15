@@ -47,6 +47,7 @@
   },
   "validations": [],
   "relations": {},
+  "hidden": ["password", "verificationToken"],
   "acls": [],
   "methods": {}
 }
