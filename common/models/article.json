@@ -23,9 +23,16 @@
       "type": "string",
       "required": true
     },
+    "author": {
+      "type": "string",
+      "required": true
+    },
     "file": {
       "type": "string",
       "required": true
+    },
+    "evaluators": {
+      "type": ["string"]
     },
     "score": {
       "type": "number",
@@ -36,6 +43,9 @@
       "type": "boolean",
       "required": true,
       "default": false
+    },
+    "date": {
+      "type": "string"
     }
   },
   "validations": [],

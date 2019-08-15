@@ -20,18 +20,18 @@
     <tbody>
         <tr *ngFor="let a of articles">
             <td>
-                {{a}}
+                {{a.title}}
             </td>
             <td>
-                {{a}}
+                {{a.date}}
             </td>
             <td>
-                {{a}}
+                {{a.state}}
             </td>
             <td>
                 <a href="author/article" class="waves-effect waves-teal btn-flat">Editar</a>
                 <a href="author/article/result" class="waves-effect waves-teal btn-flat">Resultados</a>
-                <a class="waves-effect waves-teal btn-flat">Descargar</a>
+                <a href="{{a.file}}" class="waves-effect waves-teal btn-flat">Descargar</a>
             </td>
         </tr>
     </tbody>

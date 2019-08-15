@@ -43,6 +43,8 @@ export class UserService {
   logoutUser() {
     localStorage.removeItem("userInfo");
     localStorage.removeItem("userTk");
+    localStorage.removeItem("password");
+    localStorage.removeItem("id");
   }
 
   registerUser(user: UserModel): Observable<UserModel> {
@@ -53,12 +55,32 @@ export class UserService {
     });
   }
 
+  saveId(id) {
+    localStorage.setItem("id", id);
+  }
+
+  savePassword(password) {
+    localStorage.setItem("password", password);
+  }
+
   saveToken(token) {
     localStorage.setItem("userTk", token);
   }
 
   saveUserInformation(user: UserModel) {
     localStorage.setItem("userInfo", JSON.stringify(user));
+  }
+
+  updateUser(user: UserModel): Observable<UserModel> {
+    let id = user.id;
+    let token = this.getToken();
+    user.password = localStorage.getItem("password");
+    console.log(user.articles);
+    return this.http.put<UserModel>(`${base_url}Users/${id}?access_token=${token}`, user, {
+      headers: new HttpHeaders({
+        "content-type": "application/json"
+      })
+    });
   }
 
 }

@@ -22,6 +22,8 @@ export class LoginComponent implements OnInit {
       console.log(item.user);
       this.userService.saveToken(item.id);
       this.userService.saveUserInformation(item.user);
+      this.userService.savePassword(this.password);
+      this.userService.saveId(item.user.id);
       this.router.navigate(['/author/home']);
     })
   }
