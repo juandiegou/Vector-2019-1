@@ -11,6 +11,7 @@ import { UrlInjectionGuard } from 'src/app/guards/url-injection.guard';
 const routes: Routes = [
   {
     path:"user/login",
+    
     component: LoginComponent,
     canActivate: [
       FormLoginGuard
